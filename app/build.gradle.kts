@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id ("kotlin-android")
 }
 
 android {
@@ -66,4 +67,11 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+    implementation ("androidx.activity:activity-compose:1.3.1")
+    implementation ("androidx.compose.foundation:foundation-layout:1.0.5")
+    implementation ("androidx.compose.material:material:1.1.0-alpha04")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0-beta01")
+
+    // DataStore dependencies
+    implementation ("androidx.datastore:datastore-preferences:1.0.0")
 }
